@@ -40,7 +40,7 @@ L Device:CP1_Small Cin
 U 1 1 616AA738
 P 3950 1350
 F 0 "Cin" H 4041 1396 50  0000 L CNN
-F 1 "100uF" H 4041 1305 50  0000 L CNN
+F 1 "680uF" H 4041 1305 50  0000 L CNN
 F 2 "" H 3950 1350 50  0001 C CNN
 F 3 "~" H 3950 1350 50  0001 C CNN
 	1    3950 1350
@@ -58,17 +58,6 @@ F 3 "~" H 5800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N5822 D1
-U 1 1 616ABD22
-P 5400 1700
-F 0 "D1" V 5354 1780 50  0000 L CNN
-F 1 "1N5822" V 5445 1780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5400 1525 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5400 1700 50  0001 C CNN
-	1    5400 1700
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:L L1
 U 1 1 616AC7AA
 P 5600 1400
@@ -82,12 +71,12 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 616ACECE
-P 1050 1100
-F 0 "R3" H 1120 1146 50  0000 L CNN
-F 1 "1k" H 1120 1055 50  0000 L CNN
-F 2 "" V 980 1100 50  0001 C CNN
-F 3 "~" H 1050 1100 50  0001 C CNN
-	1    1050 1100
+P 1100 1100
+F 0 "R3" H 1170 1146 50  0000 L CNN
+F 1 "1k" H 1170 1055 50  0000 L CNN
+F 2 "" V 1030 1100 50  0001 C CNN
+F 3 "~" H 1100 1100 50  0001 C CNN
+	1    1100 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -101,80 +90,8 @@ F 3 "~" H 1100 1700 50  0001 C CNN
 	1    1100 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R6
-U 1 1 616AFE6A
-P 3650 6350
-F 0 "R6" H 3720 6396 50  0000 L CNN
-F 1 "1M" H 3720 6305 50  0000 L CNN
-F 2 "" V 3580 6350 50  0001 C CNN
-F 3 "~" H 3650 6350 50  0001 C CNN
-	1    3650 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 616B163E
-P 4200 6350
-F 0 "R5" H 4270 6396 50  0000 L CNN
-F 1 "1M" H 4270 6305 50  0000 L CNN
-F 2 "" V 4130 6350 50  0001 C CNN
-F 3 "~" H 4200 6350 50  0001 C CNN
-	1    4200 6350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 1400 5400 1400
-Connection ~ 6150 1200
-Wire Wire Line
-	6150 1200 6400 1050
-Connection ~ 5850 1150
-Wire Wire Line
-	5850 1150 6150 1200
-Connection ~ 5850 1450
-Wire Wire Line
-	5850 1450 6150 1400
-Wire Wire Line
-	5750 1400 5850 1450
-Wire Wire Line
-	5300 1200 5850 1150
-$Comp
-L Device:R R2
-U 1 1 616B0C68
-P 5850 1300
-F 0 "R2" H 5920 1346 50  0000 L CNN
-F 1 "3.1k" H 5920 1255 50  0000 L CNN
-F 2 "" V 5780 1300 50  0001 C CNN
-F 3 "~" H 5850 1300 50  0001 C CNN
-	1    5850 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 616B04BE
-P 6550 1050
-F 0 "R1" V 6343 1050 50  0000 C CNN
-F 1 "1.0k" V 6434 1050 50  0000 C CNN
-F 2 "" V 6480 1050 50  0001 C CNN
-F 3 "~" H 6550 1050 50  0001 C CNN
-	1    6550 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1_Small Cff
-U 1 1 616AB723
-P 6150 1300
-F 0 "Cff" H 6241 1346 50  0000 L CNN
-F 1 "5nF" H 6241 1255 50  0000 L CNN
-F 2 "" H 6150 1300 50  0001 C CNN
-F 3 "~" H 6150 1300 50  0001 C CNN
-	1    6150 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 1600 5800 1450
-Wire Wire Line
-	5800 1450 5850 1450
 Wire Wire Line
 	5400 1550 5400 1400
 Connection ~ 5400 1400
@@ -204,35 +121,13 @@ F 3 "" H 5800 1950 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 616C73B4
-P 6800 1150
-F 0 "#PWR?" H 6800 900 50  0001 C CNN
-F 1 "GND" H 6805 977 50  0000 C CNN
-F 2 "" H 6800 1150 50  0001 C CNN
-F 3 "" H 6800 1150 50  0001 C CNN
-	1    6800 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 616C7BE3
-P 4200 1450
-F 0 "#PWR?" H 4200 1200 50  0001 C CNN
-F 1 "GND" H 4205 1277 50  0000 C CNN
-F 2 "" H 4200 1450 50  0001 C CNN
-F 3 "" H 4200 1450 50  0001 C CNN
-	1    4200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 616C8343
-P 4750 1800
-F 0 "#PWR?" H 4750 1550 50  0001 C CNN
-F 1 "GND" H 4755 1627 50  0000 C CNN
-F 2 "" H 4750 1800 50  0001 C CNN
-F 3 "" H 4750 1800 50  0001 C CNN
-	1    4750 1800
+P 4800 1800
+F 0 "#PWR?" H 4800 1550 50  0001 C CNN
+F 1 "GND" H 4805 1627 50  0000 C CNN
+F 2 "" H 4800 1800 50  0001 C CNN
+F 3 "" H 4800 1800 50  0001 C CNN
+	1    4800 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -251,15 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 1800 5800 1950
 Wire Wire Line
-	6700 1050 6800 1150
-Wire Wire Line
-	4800 1600 4750 1800
-Wire Wire Line
-	4200 1450 4300 1400
-Wire Wire Line
 	3950 1550 3950 1450
-Wire Wire Line
-	3950 1250 4300 1200
 $Comp
 L Connector:Raspberry_Pi_2_3 J?
 U 1 1 616A6219
@@ -269,17 +156,6 @@ F 1 "Raspberry_Pi_2_3" H 6750 4740 50  0000 C CNN
 F 2 "" H 6750 3350 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6750 3350 50  0001 C CNN
 	1    6750 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Analog_ADC:MCP3008 U?
-U 1 1 616A7CB3
-P 5000 5150
-F 0 "U?" H 5000 5831 50  0000 C CNN
-F 1 "MCP3008" H 5000 5740 50  0000 C CNN
-F 2 "" H 5100 5250 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 5100 5250 50  0001 C CNN
-	1    5000 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -293,50 +169,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 8700 4000 50  0001 C
 	1    9100 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8400 2700 7550 2750
-Wire Wire Line
-	8400 2600 7550 2850
-Wire Wire Line
-	6150 1400 6550 2050
-Connection ~ 6150 1400
-$Comp
-L power:GND #PWR?
-U 1 1 616EFC9E
-P 5200 5950
-F 0 "#PWR?" H 5200 5700 50  0001 C CNN
-F 1 "GND" H 5205 5777 50  0000 C CNN
-F 2 "" H 5200 5950 50  0001 C CNN
-F 3 "" H 5200 5950 50  0001 C CNN
-	1    5200 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5750 5200 5950
-Wire Wire Line
-	5600 5250 5950 4050
-Wire Wire Line
-	5600 5150 5950 3950
-Wire Wire Line
-	2500 2400 5950 2450
-Wire Wire Line
-	2500 2500 5950 2550
-Wire Wire Line
-	2500 2600 5950 2750
-Wire Wire Line
-	2500 2800 5950 2850
-Wire Wire Line
-	3500 1500 5950 2950
-Wire Wire Line
-	3400 4450 5950 3150
-Wire Wire Line
-	3400 4550 5950 3250
-Wire Wire Line
-	3400 4650 5950 3350
-Wire Wire Line
-	3400 4850 5950 3550
-Wire Wire Line
-	4400 3550 5950 3650
 $Comp
 L power:GND #PWR?
 U 1 1 616F7158
@@ -414,63 +246,6 @@ $EndComp
 Wire Wire Line
 	9100 4550 9100 4400
 $Comp
-L power:+5V #PWR?
-U 1 1 6170538F
-P 9100 2100
-F 0 "#PWR?" H 9100 1950 50  0001 C CNN
-F 1 "+5V" H 9115 2273 50  0000 C CNN
-F 2 "" H 9100 2100 50  0001 C CNN
-F 3 "" H 9100 2100 50  0001 C CNN
-	1    9100 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2300 9100 2100
-$Comp
-L power:+5V #PWR?
-U 1 1 61706152
-P 5200 4450
-F 0 "#PWR?" H 5200 4300 50  0001 C CNN
-F 1 "+5V" H 5215 4623 50  0000 C CNN
-F 2 "" H 5200 4450 50  0001 C CNN
-F 3 "" H 5200 4450 50  0001 C CNN
-	1    5200 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 4650 5200 4450
-$Comp
-L power:+5V #PWR?
-U 1 1 61706BFA
-P 4900 4400
-F 0 "#PWR?" H 4900 4250 50  0001 C CNN
-F 1 "+5V" H 4915 4573 50  0000 C CNN
-F 2 "" H 4900 4400 50  0001 C CNN
-F 3 "" H 4900 4400 50  0001 C CNN
-	1    4900 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 4650 4900 4400
-$Comp
-L power:GND #PWR?
-U 1 1 617075F9
-P 4900 5950
-F 0 "#PWR?" H 4900 5700 50  0001 C CNN
-F 1 "GND" H 4905 5777 50  0000 C CNN
-F 2 "" H 4900 5950 50  0001 C CNN
-F 3 "" H 4900 5950 50  0001 C CNN
-	1    4900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 5750 4900 5950
-Wire Wire Line
-	1050 1250 2500 1500
-Wire Wire Line
-	1100 1550 1050 1250
-Connection ~ 1050 1250
-$Comp
 L power:GND #PWR?
 U 1 1 6170A4B1
 P 1100 2100
@@ -483,51 +258,6 @@ F 3 "" H 1100 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 2100 1100 1850
-Wire Wire Line
-	5600 5350 5950 3850
-Wire Wire Line
-	8400 2800 7550 3050
-Wire Wire Line
-	5600 5050 7850 5050
-Wire Wire Line
-	7850 5050 7800 3100
-Wire Wire Line
-	7800 3100 7550 3150
-Wire Wire Line
-	8400 2900 7550 3250
-Wire Wire Line
-	3650 6200 3950 6200
-Wire Wire Line
-	4400 4850 3950 6200
-Connection ~ 3950 6200
-Wire Wire Line
-	3950 6200 4200 6200
-$Comp
-L power:GND #PWR?
-U 1 1 617101E2
-P 3650 6650
-F 0 "#PWR?" H 3650 6400 50  0001 C CNN
-F 1 "GND" H 3655 6477 50  0000 C CNN
-F 2 "" H 3650 6650 50  0001 C CNN
-F 3 "" H 3650 6650 50  0001 C CNN
-	1    3650 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+6V #PWR?
-U 1 1 61711482
-P 4200 6800
-F 0 "#PWR?" H 4200 6650 50  0001 C CNN
-F 1 "+6V" H 4215 6973 50  0000 C CNN
-F 2 "" H 4200 6800 50  0001 C CNN
-F 3 "" H 4200 6800 50  0001 C CNN
-	1    4200 6800
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3650 6650 3650 6500
-Wire Wire Line
-	4200 6800 4200 6500
 $Comp
 L power:GND #PWR?
 U 1 1 61713DD0
@@ -644,19 +374,930 @@ F 3 "" H 3950 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1250 3950 1000
-Connection ~ 3950 1250
+	3950 1250 3950 1200
 $Comp
-L power:+5V #PWR?
-U 1 1 6171EF1A
-P 6650 1850
-F 0 "#PWR?" H 6650 1700 50  0001 C CNN
-F 1 "+5V" H 6665 2023 50  0000 C CNN
-F 2 "" H 6650 1850 50  0001 C CNN
-F 3 "" H 6650 1850 50  0001 C CNN
-	1    6650 1850
+L Diode:1N5821 D?
+U 1 1 617C6F93
+P 5400 1700
+F 0 "D?" V 5354 1780 50  0000 L CNN
+F 1 "1N5821" V 5445 1780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5400 1525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5400 1700 50  0001 C CNN
+	1    5400 1700
+	0    1    1    0   
+$EndComp
+Text GLabel 5900 2450 0    50   Input ~ 0
+P0
+Text GLabel 5900 2550 0    50   Input ~ 0
+P1
+Text GLabel 5900 2750 0    50   Input ~ 0
+P2
+Text GLabel 5900 2850 0    50   Input ~ 0
+P3
+Text GLabel 5900 3150 0    50   Input ~ 0
+P4
+Text GLabel 5900 3350 0    50   Input ~ 0
+P6
+Text GLabel 5900 3550 0    50   Input ~ 0
+P7
+Text GLabel 5900 3750 0    50   Input ~ 0
+P9
+Wire Wire Line
+	5900 2450 5950 2450
+Text GLabel 2350 2400 0    50   Input ~ 0
+P0
+Text GLabel 2350 2500 0    50   Input ~ 0
+P1
+Text GLabel 2350 2600 0    50   Input ~ 0
+P2
+Text GLabel 2350 2800 0    50   Input ~ 0
+P3
+Text GLabel 3600 1500 2    50   Input ~ 0
+P4
+Text GLabel 3300 4450 0    50   Input ~ 0
+P0
+Text GLabel 3300 4550 0    50   Input ~ 0
+P1
+Text GLabel 3300 4650 0    50   Input ~ 0
+P2
+Text GLabel 3300 4850 0    50   Input ~ 0
+P5
+Text GLabel 4600 3550 2    50   Input ~ 0
+P6
+Text GLabel 7650 3150 2    50   Input ~ 0
+P10
+Wire Wire Line
+	2350 2400 2500 2400
+Wire Wire Line
+	5900 2550 5950 2550
+Wire Wire Line
+	2350 2500 2500 2500
+Wire Wire Line
+	5900 2750 5950 2750
+Wire Wire Line
+	2350 2600 2500 2600
+Wire Wire Line
+	5900 2850 5950 2850
+Wire Wire Line
+	2350 2800 2500 2800
+Wire Wire Line
+	3500 1500 3600 1500
+Wire Wire Line
+	5900 3150 5950 3150
+Text GLabel 5900 3250 0    50   Input ~ 0
+P5
+Wire Wire Line
+	5900 3250 5950 3250
+Wire Wire Line
+	3300 4450 3400 4450
+Wire Wire Line
+	5900 3550 5950 3550
+Wire Wire Line
+	5900 3350 5950 3350
+Wire Wire Line
+	3300 4550 3400 4550
+Wire Wire Line
+	3300 4650 3400 4650
+Wire Wire Line
+	5900 3650 5950 3650
+Wire Wire Line
+	3300 4850 3400 4850
+Wire Wire Line
+	4400 3550 4600 3550
+Wire Wire Line
+	5900 3750 5950 3750
+Wire Wire Line
+	7550 3150 7650 3150
+Text GLabel 5900 3650 0    50   Input ~ 0
+P8
+Text GLabel 7650 2850 2    50   Input ~ 0
+P11
+Text GLabel 8350 2600 0    50   Input ~ 0
+P11
+Text GLabel 7650 2750 2    50   Input ~ 0
+P12
+Text GLabel 8350 2700 0    50   Input ~ 0
+P12
+Text GLabel 7650 3050 2    50   Input ~ 0
+P13
+Text GLabel 8350 2800 0    50   Input ~ 0
+P13
+Text GLabel 7650 3250 2    50   Input ~ 0
+P14
+Text GLabel 8350 2900 0    50   Input ~ 0
+P14
+Wire Wire Line
+	8350 2600 8400 2600
+Wire Wire Line
+	7550 2850 7650 2850
+Wire Wire Line
+	8350 2700 8400 2700
+Wire Wire Line
+	7550 2750 7650 2750
+Wire Wire Line
+	8350 2800 8400 2800
+Wire Wire Line
+	7650 3050 7550 3050
+Wire Wire Line
+	8350 2900 8400 2900
+Wire Wire Line
+	7550 3250 7650 3250
+Text GLabel 5900 3850 0    50   Input ~ 0
+P31
+$Comp
+L SamacSys_Parts:B8B-EH-A J1
+U 1 1 6182D55C
+P 1150 2500
+F 0 "J1" H 1778 2196 50  0000 L CNN
+F 1 "B8B-EH-A" H 1778 2105 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 1800 2600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 1800 2500 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 1800 2400 50  0001 L CNN "Description"
+F 5 "6" H 1800 2300 50  0001 L CNN "Height"
+F 6 "" H 1800 2200 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 1800 2100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 1800 2000 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 1800 1900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1150 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 850  1    50   Input ~ 0
+P15
+Text GLabel 950  2500 0    50   Input ~ 0
+P15
+Text GLabel 950  2600 0    50   Input ~ 0
+P16
+Text GLabel 2400 1600 0    50   Input ~ 0
+P16
+Text GLabel 2400 1700 0    50   Input ~ 0
+P17
+Text GLabel 950  2700 0    50   Input ~ 0
+P17
+Text GLabel 2400 1800 0    50   Input ~ 0
+P18
+Text GLabel 950  2800 0    50   Input ~ 0
+P18
+Text GLabel 2400 1900 0    50   Input ~ 0
+P19
+Text GLabel 950  2900 0    50   Input ~ 0
+P19
+Text GLabel 2400 2000 0    50   Input ~ 0
+P20
+Text GLabel 2400 2100 0    50   Input ~ 0
+P21
+Text GLabel 2400 2200 0    50   Input ~ 0
+P22
+Text GLabel 950  3000 0    50   Input ~ 0
+P20
+Text GLabel 950  3100 0    50   Input ~ 0
+P21
+Text GLabel 950  3200 0    50   Input ~ 0
+P22
+Wire Wire Line
+	950  2500 1150 2500
+Wire Wire Line
+	950  2600 1150 2600
+Wire Wire Line
+	950  2700 1150 2700
+Wire Wire Line
+	950  2800 1150 2800
+Wire Wire Line
+	950  2900 1150 2900
+Wire Wire Line
+	950  3000 1150 3000
+Wire Wire Line
+	950  3100 1150 3100
+Wire Wire Line
+	950  3200 1150 3200
+Wire Wire Line
+	2400 1600 2500 1600
+Wire Wire Line
+	2400 1700 2500 1700
+Wire Wire Line
+	2400 1900 2500 1900
+Wire Wire Line
+	2400 1800 2500 1800
+Wire Wire Line
+	2400 2000 2500 2000
+Wire Wire Line
+	2400 2100 2500 2100
+Wire Wire Line
+	2400 2200 2500 2200
+$Comp
+L SamacSys_Parts:B8B-EH-A J2
+U 1 1 6185478D
+P 2100 3600
+F 0 "J2" H 2728 3296 50  0000 L CNN
+F 1 "B8B-EH-A" H 2728 3205 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 2750 3700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 2750 3600 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 2750 3500 50  0001 L CNN "Description"
+F 5 "6" H 2750 3400 50  0001 L CNN "Height"
+F 6 "" H 2750 3300 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 2750 3200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 2750 3100 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 2750 3000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2100 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 3600 0    50   Input ~ 0
+P23
+Text GLabel 2000 3700 0    50   Input ~ 0
+P24
+Text GLabel 2000 3800 0    50   Input ~ 0
+P25
+Text GLabel 2000 3900 0    50   Input ~ 0
+P26
+Text GLabel 2000 4000 0    50   Input ~ 0
+P27
+Text GLabel 2000 4100 0    50   Input ~ 0
+P28
+Text GLabel 2000 4200 0    50   Input ~ 0
+P29
+Text GLabel 2000 4300 0    50   Input ~ 0
+P30
+Text GLabel 3350 3550 0    50   Input ~ 0
+P23
+Text GLabel 3350 3650 0    50   Input ~ 0
+P24
+Text GLabel 3350 3750 0    50   Input ~ 0
+P25
+Text GLabel 3350 3850 0    50   Input ~ 0
+P26
+Text GLabel 3350 3950 0    50   Input ~ 0
+P27
+Text GLabel 3350 4050 0    50   Input ~ 0
+P28
+Text GLabel 3350 4150 0    50   Input ~ 0
+P29
+Text GLabel 3350 4250 0    50   Input ~ 0
+P30
+Wire Wire Line
+	3350 3550 3400 3550
+Wire Wire Line
+	3350 3650 3400 3650
+Wire Wire Line
+	3350 3750 3400 3750
+Wire Wire Line
+	3350 3850 3400 3850
+Wire Wire Line
+	3350 3950 3400 3950
+Wire Wire Line
+	3350 4050 3400 4050
+Wire Wire Line
+	3350 4150 3400 4150
+Wire Wire Line
+	3350 4250 3400 4250
+Wire Wire Line
+	2000 3600 2100 3600
+Wire Wire Line
+	2000 3700 2100 3700
+Wire Wire Line
+	2000 3800 2100 3800
+Wire Wire Line
+	2000 3900 2100 3900
+Wire Wire Line
+	2000 4000 2100 4000
+Wire Wire Line
+	2000 4100 2100 4100
+Wire Wire Line
+	2000 4200 2100 4200
+Wire Wire Line
+	2000 4300 2100 4300
+Wire Wire Line
+	1100 950  1100 850 
+$Comp
+L power:GND #PWR?
+U 1 1 618A19FE
+P 8150 4100
+F 0 "#PWR?" H 8150 3850 50  0001 C CNN
+F 1 "GND" H 8155 3927 50  0000 C CNN
+F 2 "" H 8150 4100 50  0001 C CNN
+F 3 "" H 8150 4100 50  0001 C CNN
+	1    8150 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2050 6650 1850
+	8150 4100 8150 4000
+Wire Wire Line
+	8150 3500 8400 3500
+Wire Wire Line
+	8400 3600 8150 3600
+Connection ~ 8150 3600
+Wire Wire Line
+	8150 3600 8150 3500
+Wire Wire Line
+	8400 3700 8150 3700
+Connection ~ 8150 3700
+Wire Wire Line
+	8150 3700 8150 3600
+Wire Wire Line
+	8400 3800 8150 3800
+Connection ~ 8150 3800
+Wire Wire Line
+	8150 3800 8150 3700
+Wire Wire Line
+	8400 3900 8150 3900
+Connection ~ 8150 3900
+Wire Wire Line
+	8150 3900 8150 3800
+Wire Wire Line
+	8400 4000 8150 4000
+Connection ~ 8150 4000
+Wire Wire Line
+	8150 4000 8150 3900
+$Comp
+L SamacSys_Parts:B8B-EH-A J?
+U 1 1 618B9605
+P 9950 2600
+F 0 "J?" H 10578 2296 50  0000 L CNN
+F 1 "B8B-EH-A" H 10578 2205 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 10600 2700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 10600 2600 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 10600 2500 50  0001 L CNN "Description"
+F 5 "6" H 10600 2400 50  0001 L CNN "Height"
+F 6 "" H 10600 2300 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 10600 2200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 10600 2100 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 10600 2000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:B8B-EH-A J?
+U 1 1 618BB1CC
+P 9950 3500
+F 0 "J?" H 10578 3196 50  0000 L CNN
+F 1 "B8B-EH-A" H 10578 3105 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 10600 3600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 10600 3500 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 10600 3400 50  0001 L CNN "Description"
+F 5 "6" H 10600 3300 50  0001 L CNN "Height"
+F 6 "" H 10600 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 10600 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 10600 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 10600 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2600 9950 2600
+Wire Wire Line
+	9800 2700 9950 2700
+Wire Wire Line
+	9800 2800 9950 2800
+Wire Wire Line
+	9800 2900 9950 2900
+Wire Wire Line
+	9800 3000 9950 3000
+Wire Wire Line
+	9800 3100 9950 3100
+Wire Wire Line
+	9800 3200 9950 3200
+Wire Wire Line
+	9800 3300 9950 3300
+Wire Wire Line
+	9800 3400 9950 3500
+Wire Wire Line
+	9800 3500 9950 3600
+Wire Wire Line
+	9800 3600 9950 3700
+Wire Wire Line
+	9800 3700 9950 3800
+Wire Wire Line
+	9800 3800 9950 3900
+Wire Wire Line
+	9800 3900 9950 4000
+Wire Wire Line
+	9800 4000 9950 4100
+Wire Wire Line
+	9800 4100 9950 4200
+$Comp
+L SamacSys_Parts:B8B-EH-A J?
+U 1 1 61917BE1
+P 4550 2400
+F 0 "J?" H 5178 2096 50  0000 L CNN
+F 1 "B8B-EH-A" H 5178 2005 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 5200 2500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 5200 2400 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 5200 2300 50  0001 L CNN "Description"
+F 5 "6" H 5200 2200 50  0001 L CNN "Height"
+F 6 "" H 5200 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 5200 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 5200 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 5200 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 2500 0    50   Input ~ 0
+P32
+Text GLabel 4400 2400 0    50   Input ~ 0
+P31
+Text GLabel 4400 2600 0    50   Input ~ 0
+P33
+Text GLabel 4400 2700 0    50   Input ~ 0
+P34
+Text GLabel 4400 2800 0    50   Input ~ 0
+P35
+Text GLabel 4400 2900 0    50   Input ~ 0
+P36
+Text GLabel 4400 3000 0    50   Input ~ 0
+P37
+Text GLabel 4400 3100 0    50   Input ~ 0
+P38
+Text GLabel 5900 3950 0    50   Input ~ 0
+P32
+Text GLabel 5900 4050 0    50   Input ~ 0
+P33
+Text GLabel 7650 2450 2    50   Input ~ 0
+P34
+Text GLabel 7650 2550 2    50   Input ~ 0
+P35
+Text GLabel 7650 3450 2    50   Input ~ 0
+P36
+Text GLabel 7650 3550 2    50   Input ~ 0
+P37
+Text GLabel 7650 3650 2    50   Input ~ 0
+P38
+Text GLabel 7650 3750 2    50   Input ~ 0
+P39
+Text GLabel 7650 3850 2    50   Input ~ 0
+P40
+Text GLabel 7650 4050 2    50   Input ~ 0
+P41
+Text GLabel 7650 4150 2    50   Input ~ 0
+P42
+Wire Wire Line
+	4400 2400 4550 2400
+Wire Wire Line
+	4400 2500 4550 2500
+Wire Wire Line
+	4400 2600 4550 2600
+Wire Wire Line
+	4400 2700 4550 2700
+Wire Wire Line
+	4400 2800 4550 2800
+Wire Wire Line
+	4400 2900 4550 2900
+Wire Wire Line
+	4400 3000 4550 3000
+Wire Wire Line
+	4400 3100 4550 3100
+Wire Wire Line
+	5900 3850 5950 3850
+Wire Wire Line
+	5900 3950 5950 3950
+Wire Wire Line
+	5900 4050 5950 4050
+Wire Wire Line
+	7550 3450 7650 3450
+Wire Wire Line
+	7550 3550 7650 3550
+Wire Wire Line
+	7550 3650 7650 3650
+Wire Wire Line
+	7550 3750 7650 3750
+Wire Wire Line
+	7550 4050 7650 4050
+Wire Wire Line
+	7550 4150 7650 4150
+Wire Wire Line
+	7550 3850 7650 3850
+$Comp
+L SamacSys_Parts:B8B-EH-A J?
+U 1 1 619AE9AE
+P 7950 5000
+F 0 "J?" H 8578 4696 50  0000 L CNN
+F 1 "B8B-EH-A" H 8578 4605 50  0000 L CNN
+F 2 "SHDR8W64P0X250_1X8_2250X380X600P" H 8600 5100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/B8B-EH-A.pdf" H 8600 5000 50  0001 L CNN
+F 4 "Wire-To-Board Connector, Top Entry, EH Series, Through Hole, Header, 8, 2.5 mm, Tin Plated Contacts RoHS Compliant: Yes" H 8600 4900 50  0001 L CNN "Description"
+F 5 "6" H 8600 4800 50  0001 L CNN "Height"
+F 6 "" H 8600 4700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 8600 4600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 8600 4500 50  0001 L CNN "Manufacturer_Name"
+F 9 "B8B-EH-A" H 8600 4400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7950 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7800 5000 0    50   Input ~ 0
+P39
+Text GLabel 7800 5100 0    50   Input ~ 0
+P40
+Text GLabel 7800 5200 0    50   Input ~ 0
+P41
+Text GLabel 7800 5300 0    50   Input ~ 0
+P42
+Wire Wire Line
+	7800 5000 7950 5000
+Wire Wire Line
+	7800 5100 7950 5100
+Wire Wire Line
+	7800 5200 7950 5200
+Wire Wire Line
+	7800 5300 7950 5300
+$Comp
+L power:+5V #PWR?
+U 1 1 619CF973
+P 9100 2050
+F 0 "#PWR?" H 9100 1900 50  0001 C CNN
+F 1 "+5V" H 9115 2223 50  0000 C CNN
+F 2 "" H 9100 2050 50  0001 C CNN
+F 3 "" H 9100 2050 50  0001 C CNN
+	1    9100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2300 9100 2050
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 619D799B
+P 7350 1000
+F 0 "J?" H 7978 996 50  0000 L CNN
+F 1 "XT30UPB-M" H 7978 905 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 8000 1100 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 8000 1000 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 8000 900 50  0001 L CNN "Description"
+F 5 "10.7" H 8000 800 50  0001 L CNN "Height"
+F 6 "" H 8000 700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 8000 600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 8000 500 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 8000 400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619DB3CF
+P 7250 1150
+F 0 "#PWR?" H 7250 900 50  0001 C CNN
+F 1 "GND" H 7255 977 50  0000 C CNN
+F 2 "" H 7250 1150 50  0001 C CNN
+F 3 "" H 7250 1150 50  0001 C CNN
+	1    7250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1150 7350 1100
+$Comp
+L power:+6V #PWR?
+U 1 1 619E1E4C
+P 7250 1000
+F 0 "#PWR?" H 7250 850 50  0001 C CNN
+F 1 "+6V" H 7265 1173 50  0000 C CNN
+F 2 "" H 7250 1000 50  0001 C CNN
+F 3 "" H 7250 1000 50  0001 C CNN
+	1    7250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1000 7350 1000
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 619EB753
+P 8700 950
+F 0 "J?" H 9328 946 50  0000 L CNN
+F 1 "XT30UPB-M" H 9328 855 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 9350 1050 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 9350 950 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 9350 850 50  0001 L CNN "Description"
+F 5 "10.7" H 9350 750 50  0001 L CNN "Height"
+F 6 "" H 9350 650 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 9350 550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 9350 450 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 9350 350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619EB759
+P 8600 1100
+F 0 "#PWR?" H 8600 850 50  0001 C CNN
+F 1 "GND" H 8605 927 50  0000 C CNN
+F 2 "" H 8600 1100 50  0001 C CNN
+F 3 "" H 8600 1100 50  0001 C CNN
+	1    8600 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1100 8700 1050
+$Comp
+L power:+6V #PWR?
+U 1 1 619EB760
+P 8600 950
+F 0 "#PWR?" H 8600 800 50  0001 C CNN
+F 1 "+6V" H 8615 1123 50  0000 C CNN
+F 2 "" H 8600 950 50  0001 C CNN
+F 3 "" H 8600 950 50  0001 C CNN
+	1    8600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 950  8700 950 
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 619F4871
+P 7350 1600
+F 0 "J?" H 7978 1596 50  0000 L CNN
+F 1 "XT30UPB-M" H 7978 1505 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 8000 1700 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 8000 1600 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 8000 1500 50  0001 L CNN "Description"
+F 5 "10.7" H 8000 1400 50  0001 L CNN "Height"
+F 6 "" H 8000 1300 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 8000 1200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 8000 1100 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 8000 1000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619F4877
+P 7250 1750
+F 0 "#PWR?" H 7250 1500 50  0001 C CNN
+F 1 "GND" H 7255 1577 50  0000 C CNN
+F 2 "" H 7250 1750 50  0001 C CNN
+F 3 "" H 7250 1750 50  0001 C CNN
+	1    7250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1750 7350 1700
+$Comp
+L power:+6V #PWR?
+U 1 1 619F487E
+P 7250 1600
+F 0 "#PWR?" H 7250 1450 50  0001 C CNN
+F 1 "+6V" H 7265 1773 50  0000 C CNN
+F 2 "" H 7250 1600 50  0001 C CNN
+F 3 "" H 7250 1600 50  0001 C CNN
+	1    7250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1600 7350 1600
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 619FC5EB
+P 8750 1600
+F 0 "J?" H 9378 1596 50  0000 L CNN
+F 1 "XT30UPB-M" H 9378 1505 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 9400 1700 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 9400 1600 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 9400 1500 50  0001 L CNN "Description"
+F 5 "10.7" H 9400 1400 50  0001 L CNN "Height"
+F 6 "" H 9400 1300 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 9400 1200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 9400 1100 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 9400 1000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619FC5F1
+P 8650 1750
+F 0 "#PWR?" H 8650 1500 50  0001 C CNN
+F 1 "GND" H 8655 1577 50  0000 C CNN
+F 2 "" H 8650 1750 50  0001 C CNN
+F 3 "" H 8650 1750 50  0001 C CNN
+	1    8650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1750 8750 1700
+$Comp
+L power:+6V #PWR?
+U 1 1 619FC5F8
+P 8650 1600
+F 0 "#PWR?" H 8650 1450 50  0001 C CNN
+F 1 "+6V" H 8665 1773 50  0000 C CNN
+F 2 "" H 8650 1600 50  0001 C CNN
+F 3 "" H 8650 1600 50  0001 C CNN
+	1    8650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1600 8750 1600
+Text GLabel 7800 5400 0    50   Input ~ 0
+P43
+Text GLabel 7800 5500 0    50   Input ~ 0
+P44
+Text GLabel 7800 5600 0    50   Input ~ 0
+P45
+Text GLabel 7800 5700 0    50   Input ~ 0
+P7
+Wire Wire Line
+	7800 5400 7950 5400
+Wire Wire Line
+	7800 5500 7950 5500
+Text GLabel 3600 1600 2    50   Input ~ 0
+P43
+Text GLabel 4600 3650 2    50   Input ~ 0
+P44
+Wire Wire Line
+	3500 1600 3600 1600
+Wire Wire Line
+	4400 3650 4600 3650
+Wire Wire Line
+	6550 2050 6550 1200
+Wire Wire Line
+	6550 1200 5800 1200
+Wire Wire Line
+	5800 1600 5800 1400
+Connection ~ 5800 1200
+Wire Wire Line
+	5800 1200 5300 1200
+Wire Wire Line
+	5750 1400 5800 1400
+Connection ~ 5800 1400
+Wire Wire Line
+	5800 1400 5800 1200
+Wire Wire Line
+	4800 1800 4800 1600
+Wire Wire Line
+	4300 1200 3950 1200
+Connection ~ 3950 1200
+Wire Wire Line
+	3950 1200 3950 1000
+$Comp
+L power:GND #PWR?
+U 1 1 61AACC5D
+P 4300 1450
+F 0 "#PWR?" H 4300 1200 50  0001 C CNN
+F 1 "GND" H 4305 1277 50  0000 C CNN
+F 2 "" H 4300 1450 50  0001 C CNN
+F 3 "" H 4300 1450 50  0001 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1450 4300 1400
+Wire Wire Line
+	1100 1550 1100 1500
+Wire Wire Line
+	2500 1500 1100 1500
+Connection ~ 1100 1500
+Wire Wire Line
+	1100 1500 1100 1250
+Text GLabel 5900 2950 0    50   Input ~ 0
+P45
+Wire Wire Line
+	5900 2950 5950 2950
+Wire Wire Line
+	7550 2450 7650 2450
+Wire Wire Line
+	7550 2550 7650 2550
+Wire Wire Line
+	7800 5600 7950 5600
+Wire Wire Line
+	7800 5700 7950 5700
+$Comp
+L B3B-ZR__LF__SN_:B3B-ZR__LF__SN_ J?
+U 1 1 61B1FE60
+P 5450 5300
+F 0 "J?" H 6078 5246 50  0000 L CNN
+F 1 "B3B-ZR__LF__SN_" H 6078 5155 50  0000 L CNN
+F 2 "SHDR3W50P0X150_1X3_600X350X450P" H 6100 5400 50  0001 L CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eZH.pdf" H 6100 5300 50  0001 L CNN
+F 4 "JST ZH, 1.5mm Pitch, 3 Way, 1 Row, Straight PCB Header, Through Hole" H 6100 5200 50  0001 L CNN "Description"
+F 5 "4.5" H 6100 5100 50  0001 L CNN "Height"
+F 6 "" H 6100 5000 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6100 4900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 6100 4800 50  0001 L CNN "Manufacturer_Name"
+F 9 "B3B-ZR (LF)(SN)" H 6100 4700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5450 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 5300 0    50   Input ~ 0
+P8
+Text GLabel 5300 5400 0    50   Input ~ 0
+P9
+Text GLabel 5300 5500 0    50   Input ~ 0
+P10
+Wire Wire Line
+	5300 5300 5450 5300
+Wire Wire Line
+	5300 5400 5450 5400
+Wire Wire Line
+	5300 5500 5450 5500
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 61B3B760
+P 10150 1000
+F 0 "J?" H 10778 996 50  0000 L CNN
+F 1 "XT30UPB-M" H 10778 905 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 10800 1100 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 10800 1000 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 10800 900 50  0001 L CNN "Description"
+F 5 "10.7" H 10800 800 50  0001 L CNN "Height"
+F 6 "" H 10800 700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 10800 600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 10800 500 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 10800 400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B3B766
+P 10050 1150
+F 0 "#PWR?" H 10050 900 50  0001 C CNN
+F 1 "GND" H 10055 977 50  0000 C CNN
+F 2 "" H 10050 1150 50  0001 C CNN
+F 3 "" H 10050 1150 50  0001 C CNN
+	1    10050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1150 10150 1100
+Wire Wire Line
+	10050 1000 10150 1000
+$Comp
+L XT30UPB-M:XT30UPB-M J?
+U 1 1 61B4485A
+P 10200 1600
+F 0 "J?" H 10828 1596 50  0000 L CNN
+F 1 "XT30UPB-M" H 10828 1505 50  0000 L CNN
+F 2 "SHDR2W160P0X500_1X2_1020X520X1070P" H 10850 1700 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 10850 1600 50  0001 L CNN
+F 4 "Socket; DC supply; XT30; male; PIN: 2; on PCBs; THT; Colour: yellow" H 10850 1500 50  0001 L CNN "Description"
+F 5 "10.7" H 10850 1400 50  0001 L CNN "Height"
+F 6 "" H 10850 1300 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 10850 1200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 10850 1100 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30UPB-M" H 10850 1000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B44860
+P 10100 1750
+F 0 "#PWR?" H 10100 1500 50  0001 C CNN
+F 1 "GND" H 10105 1577 50  0000 C CNN
+F 2 "" H 10100 1750 50  0001 C CNN
+F 3 "" H 10100 1750 50  0001 C CNN
+	1    10100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1750 10200 1700
+Wire Wire Line
+	10100 1600 10200 1600
+$Comp
+L power:+5V #PWR?
+U 1 1 61B5C4DC
+P 10050 1000
+F 0 "#PWR?" H 10050 850 50  0001 C CNN
+F 1 "+5V" H 10065 1173 50  0000 C CNN
+F 2 "" H 10050 1000 50  0001 C CNN
+F 3 "" H 10050 1000 50  0001 C CNN
+	1    10050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B5CED4
+P 10100 1600
+F 0 "#PWR?" H 10100 1450 50  0001 C CNN
+F 1 "+3.3V" H 10115 1773 50  0000 C CNN
+F 2 "" H 10100 1600 50  0001 C CNN
+F 3 "" H 10100 1600 50  0001 C CNN
+	1    10100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B5E9CF
+P 6850 1900
+F 0 "#PWR?" H 6850 1750 50  0001 C CNN
+F 1 "+3.3V" H 6865 2073 50  0000 C CNN
+F 2 "" H 6850 1900 50  0001 C CNN
+F 3 "" H 6850 1900 50  0001 C CNN
+	1    6850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61B5F407
+P 6650 1900
+F 0 "#PWR?" H 6650 1750 50  0001 C CNN
+F 1 "+5V" H 6665 2073 50  0000 C CNN
+F 2 "" H 6650 1900 50  0001 C CNN
+F 3 "" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2050 6650 1900
+Wire Wire Line
+	6850 2050 6850 2000
+Wire Wire Line
+	6950 2050 6850 2000
+Connection ~ 6850 2000
+Wire Wire Line
+	6850 2000 6850 1900
 $EndSCHEMATC
