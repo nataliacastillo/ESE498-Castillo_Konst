@@ -1,4 +1,4 @@
-18955379412711174
+18957015715688361
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73205,6 +73205,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RPi_Hat
+CAMERA_HOLE
+
+
+0
+0
+0
 RPi_Hat
 Pin_Header_Straight_2x20
 Through hole pin header
