@@ -1,4 +1,18 @@
-18957015715688361
+18963563779274074
+B2B
+JST_B2B-PH-K-S(LF)(SN)
+
+
+0
+2
+2
+B4B
+JST_B4B-PH-K-S(LF)(SN)
+
+
+0
+4
+4
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2407,6 +2421,13 @@ Gauge Massstab 100mm SilkScreenTop Type 2
 0
 0
 0
+Cap
+CAP_EEEFK1A221AL
+
+
+0
+2
+2
 Capacitor_SMD
 CP_Elec_3x5.3
 SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics 
@@ -58512,6 +58533,13 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
+PCA9552PW
+SOP65P640X110-24N
+
+
+0
+24
+24
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
 Analog BGA-28 4.0mm x 6.25mm package, pitch 0.4mm pad, based on https://www.analog.com/media/en/technical-documentation/data-sheets/8063fa.pdf
