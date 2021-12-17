@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="master" name="master" type="master.py" output="screen"/>
+  <node pkg="steering" name="steering" type="steering.py" output="screen"/>
+  <node pkg="motor" name="motor" type="motor.py" output="screen"/>
+  <node pkg="line_tracker" name="line_tracker" type="line_tracking.py" output="screen"/>
+  <node pkg="ultrasonic" name="ultrasonic" type="ultrasonic.py" output="screen"/>
+  <node pkg="camera" name="camera" type="camera.py" output="screen"/>
+</launch>
